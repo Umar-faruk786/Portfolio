@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar Faruk J. | Web Developer • UI/UX Designer • WordPress Developer • Data Analyst</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Umar Faruk J. - Web Developer, UI/UX Designer, WordPress Developer, and Data Analyst. Computer Science Engineering student with hands-on experience in web development, REST API integration, and database management.">
+  <meta name="keywords" content="Umar Faruk J, Web Developer, UI/UX Designer, WordPress Developer, Data Analyst, Mahendra Engineering College, Java, React, SQL, Portfolio, Figma, Hostel Room Allocation, Multi-Agent System">
+  <meta name="author" content="Umar Faruk J.">
+  <meta property="og:title" content="Umar Faruk J. | Web Developer & UI/UX Designer">
+  <meta property="og:description" content="Computer Science Engineering student with hands-on experience in web development, frontend technologies, REST API integration, database management, and WordPress development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/project-socialopti.jpg">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Inter, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Layers -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="bg-dot-grid"></div>
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Sticky Header Navigation
+       ========================================================================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-link" aria-label="Umar Faruk J. Homepage">
+        <div class="brand-logo-wrap">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+            <path d="M9 8V18C9 21.866 12.134 25 16 25C19.866 25 23 21.866 23 18V8" stroke="#6366F1" stroke-width="2.75" stroke-linecap="round"/>
+            <path d="M16 14H23" stroke="#06B6D4" stroke-width="2.75" stroke-linecap="round"/>
+            <circle cx="16" cy="18" r="2" fill="#8B5CF6"/>
+          </svg>
+        </div>
+        <span>Umar Faruk J.</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#summary" class="nav-link">Summary</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Items & Theme Toggle -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Functional Download Resume Button (Nav) -->
+        <a href="Umar%20faruk%20J_resume.pdf" download="Umar faruk J_resume.pdf" class="btn btn-secondary btn-sm nav-resume-btn" id="navResumeBtn" title="Download Umar Faruk J. Resume (PDF)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Open Mobile Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <span class="brand-link">Umar Faruk J.</span>
+        <button id="mobileDrawerClose" class="modal-close-btn" aria-label="Close Mobile Navigation">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-drawer-links">
+        <li><a href="#summary" class="mobile-drawer-link">Summary</a></li>
+        <li><a href="#education" class="mobile-drawer-link">Education</a></li>
+        <li><a href="#skills" class="mobile-drawer-link">Core Skills</a></li>
+        <li><a href="#projects" class="mobile-drawer-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-drawer-link">Internship Experience</a></li>
+        <li><a href="#certifications" class="mobile-drawer-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-drawer-link">Contact</a></li>
+      </ul>
+      <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="Umar%20faruk%20J_resume.pdf" download="Umar faruk J_resume.pdf" class="btn btn-primary" style="width: 100%; text-align: center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume (PDF)</span>
+        </a>
+        <button onclick="openResumeModal(); closeMobileDrawer();" class="btn btn-secondary" style="width: 100%;">
+          Preview Resume In Modal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         1. Hero Section
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-badge-wrap">
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                <span>Available for 2026 Roles</span>
+              </div>
+              <span class="section-badge">Krishnagiri, Tamil Nadu</span>
+            </div>
+
+            <!-- Exact Name -->
+            <h1 class="hero-name">
+              Umar Faruk <span class="text-gradient">J.</span>
+            </h1>
+
+            <!-- Exact Sub-Headings -->
+            <div class="hero-roles-banner">
+              <span class="role-tag">WEB DEVELOPER</span>
+              <span class="role-sep">•</span>
+              <span class="role-tag">UI/UX DESIGNER</span>
+              <span class="role-sep">•</span>
+              <span class="role-tag">WORDPRESS DEVELOPER</span>
+              <span class="role-sep">•</span>
+              <span class="role-tag">DATA ANALYST</span>
+            </div>
+
+            <!-- Exact Contact Info Strip -->
+            <div class="hero-contact-badge-strip">
+              <div class="hero-contact-chip" title="Location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Krishnagiri, Tamil Nadu-609304</span>
+              </div>
+              <span class="contact-sep">|</span>
+              <a href="tel:+918122259846" class="hero-contact-chip interactive" title="Call Umar Faruk">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+918122259846</span>
+              </a>
+              <span class="contact-sep">|</span>
+              <a href="mailto:umars81222@gmail.com" class="hero-contact-chip interactive" title="Email Umar Faruk">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>umars81222@gmail.com</span>
+              </a>
+            </div>
+
+            <!-- Exact Bio / Tagline -->
+            <p class="hero-tagline">
+              Computer Science Engineering student with hands-on experience in web development, frontend technologies, REST API integration, database management, and WordPress development.
+            </p>
+
+            <!-- Dual Action CTAs: Explore Projects & Functional Download Resume -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg" id="heroExploreBtn">
+                <span>Explore Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <!-- Exact functional download resume button -->
+              <a href="Umar%20faruk%20J_resume.pdf" download="Umar faruk J_resume.pdf" class="btn btn-secondary btn-lg" id="heroResumeBtn" title="Download Umar Faruk J. Resume (PDF)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+
+              <!-- Modal Preview Option -->
+              <button onclick="openResumeModal()" class="btn btn-outline btn-lg" title="View interactive resume in modal">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Preview Resume</span>
+              </button>
+            </div>
+
+            <!-- Social Links & Direct Quick Actions -->
+            <div class="hero-social-strip">
+              <span class="hero-social-label">Connect</span>
+              <div class="social-icons-group">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75c.97 0 1.76.78 1.76 1.75s-.79 1.76-1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78Z"/>
+                  </svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </a>
+                <!-- Email Direct Copy -->
+                <button onclick="copyToClipboard('umars81222@gmail.com', 'Email Address')" class="social-icon-btn" title="Copy Email: umars81222@gmail.com" aria-label="Copy Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </button>
+                <!-- Phone Direct Copy -->
+                <button onclick="copyToClipboard('+918122259846', 'Phone Number')" class="social-icon-btn" title="Copy Phone: +918122259846" aria-label="Copy Phone">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Showcase: Professional Profile Picture Card -->
+          <div class="hero-visual-container reveal-on-scroll">
+            <!-- Floating Interactive Badges -->
+            <div class="floating-badge floating-badge-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Full-Stack Web & APIs</span>
+            </div>
+
+            <div class="floating-badge floating-badge-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>UI/UX & Data Analytics</span>
+            </div>
+
+            <!-- Sleek Modern Rounded Profile Picture Card -->
+            <div class="hero-portrait-card">
+              <!-- Geometric Portrait Frame with Explicit 4:5 Aspect Ratio -->
+              <div class="hero-portrait-frame">
+                <img 
+                  src="assets/images/umar-profile.jpg" 
+                  alt="Umar Faruk J. - Web Developer & UI/UX Designer" 
+                  class="hero-portrait-img" 
+                  loading="eager"
+                  width="380"
+                  height="475"
+                >
+                <!-- Frame Floating Status Tag -->
+                <div class="portrait-overlay-bottom">
+                  <div class="portrait-status-tag">
+                    <span class="status-dot"></span>
+                    <span>Available for 2026 Roles</span>
+                  </div>
+                  <div class="portrait-role-badge">
+                    <span>Krishnagiri, TN</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profile Metadata & Metrics -->
+              <div class="hero-card-meta">
+                <div class="hero-card-header-row">
+                  <div>
+                    <h2 class="hero-card-name">Umar Faruk J.</h2>
+                    <div class="hero-card-role">B.E. Computer Science & Engineering</div>
+                  </div>
+                  <div class="hero-card-tag-pill">CGPA: 8.02</div>
+                </div>
+
+                <div class="hero-pill-stats">
+                  <div class="hero-mini-stat">
+                    <div class="mini-stat-val">5+</div>
+                    <div class="mini-stat-lbl">Certifications</div>
+                  </div>
+                  <div class="hero-mini-stat">
+                    <div class="mini-stat-val">2</div>
+                    <div class="mini-stat-lbl">Core Systems</div>
+                  </div>
+                  <div class="hero-mini-stat">
+                    <div class="mini-stat-val">3-Mo</div>
+                    <div class="mini-stat-lbl">WordPress Intern</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. Professional Summary
+         ========================================================================== -->
+    <section id="summary" class="summary-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Career Profile</div>
+          <h2 class="section-title">Professional <span class="text-gradient">Summary</span></h2>
+          <p class="section-subtitle">
+            A cohesive bridge between solid computer science engineering principles and intuitive digital user experiences.
+          </p>
+        </div>
+
+        <div class="summary-card reveal-on-scroll">
+          <div class="summary-header-row">
+            <div class="summary-emblem-wrap">
+              <img src="assets/images/profile-emblem.jpg" alt="Umar Faruk J. Emblem" width="60" height="60" class="summary-emblem-img">
+            </div>
+            <div>
+              <div class="summary-badge-title">Computer Science Engineering · Mahendra Engineering College</div>
+              <div class="summary-badge-sub">Full Stack Web Development • UI/UX Architecture • Data Analytics</div>
+            </div>
+          </div>
+
+          <!-- Exact Required Professional Summary Text -->
+          <p class="summary-lead-paragraph">
+            Computer Science Engineering student with hands-on experience in web development, frontend technologies, REST API integration, database management, and WordPress development. Familiar with Java, JavaScript, HTML, CSS, React.js, SQL, Git/GitHub, and responsive web design. Experienced in developing academic and real-world web projects with a focus on problem-solving, debugging, usability, and maintainable solutions.
+          </p>
+
+          <!-- Core Capability Highlights Grid -->
+          <div class="summary-highlights-grid">
+            <div class="summary-highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="highlight-content">
+                <div class="highlight-title">Modern Web & Frontend</div>
+                <div class="highlight-desc">React.js, responsive layouts, Tailwind CSS, component-driven design systems.</div>
+              </div>
+            </div>
+
+            <div class="summary-highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div class="highlight-content">
+                <div class="highlight-title">REST APIs & Integration</div>
+                <div class="highlight-desc">Seamless API endpoints, structured JSON payload management, and data flow.</div>
+              </div>
+            </div>
+
+            <div class="summary-highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div class="highlight-content">
+                <div class="highlight-title">Database Management</div>
+                <div class="highlight-desc">Relational schema design with MySQL, MongoDB document storage, and query optimization.</div>
+              </div>
+            </div>
+
+            <div class="summary-highlight-item">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><circle cx="12" cy="12" r="4"></circle></svg>
+              </div>
+              <div class="highlight-content">
+                <div class="highlight-title">UI/UX & Prototyping</div>
+                <div class="highlight-desc">Figma wireframes, usability evaluation, design tokens, and developer handoff.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. Education Section
+         ========================================================================== -->
+    <section id="education" class="education-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Academic Foundation</div>
+          <h2 class="section-title">Academic <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">
+            Strong computer science fundamentals, engineering discipline, and consistent scholastic performance.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Education 1: B.E. Computer Science and Engineering -->
+          <div class="education-card reveal-on-scroll">
+            <div class="edu-top-row">
+              <div class="edu-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="edu-score-pill">
+                <span class="score-label">CGPA</span>
+                <span class="score-val">8.02</span>
+              </div>
+            </div>
+
+            <div class="edu-main-info">
+              <span class="edu-year-badge">2023 – 2027</span>
+              <h3 class="edu-degree-title">B.E. Computer Science and Engineering</h3>
+              <div class="edu-institution-name">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"></path></svg>
+                <span>Mahendra Engineering College</span>
+              </div>
+            </div>
+
+            <p class="edu-description">
+              Pursuing comprehensive undergraduate coursework in Object-Oriented Programming (Java), Data Structures & Algorithms, Relational Database Management Systems (SQL), Operating Systems, Web Engineering, and Software Architecture.
+            </p>
+
+            <div class="edu-chips-row">
+              <span class="edu-chip">Computer Science</span>
+              <span class="edu-chip">Data Structures</span>
+              <span class="edu-chip">Java & OOP</span>
+              <span class="edu-chip">Database Systems</span>
+              <span class="edu-chip">Software Engineering</span>
+            </div>
+          </div>
+
+          <!-- Education 2: Higher Secondary Education -->
+          <div class="education-card reveal-on-scroll">
+            <div class="edu-top-row">
+              <div class="edu-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="edu-score-pill score-secondary">
+                <span class="score-label">Score</span>
+                <span class="score-val">69%</span>
+              </div>
+            </div>
+
+            <div class="edu-main-info">
+              <span class="edu-year-badge">2021 – 2023</span>
+              <h3 class="edu-degree-title">Higher Secondary Education</h3>
+              <div class="edu-institution-name">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"></path></svg>
+                <span>Govt. Boys HSS, Uthangarai</span>
+              </div>
+            </div>
+
+            <p class="edu-description">
+              Completed Higher Secondary Certificate curriculum with a strong mathematical and science emphasis, laying early computational thinking, analytical reasoning, and foundational programming literacy.
+            </p>
+
+            <div class="edu-chips-row">
+              <span class="edu-chip">Higher Secondary</span>
+              <span class="edu-chip">Mathematics</span>
+              <span class="edu-chip">Computer Science</span>
+              <span class="edu-chip">Physics & Chemistry</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. Core Skills Section (Bento Grid)
+         ========================================================================== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Organized Competencies</div>
+          <h2 class="section-title">Core Skills in <span class="text-gradient">Bento Grid</span></h2>
+          <p class="section-subtitle">
+            Categorized technical stack spanning programming languages, modern web development, backend APIs, databases, design, and problem solving.
+          </p>
+        </div>
+
+        <div class="skills-bento-grid">
+          
+          <!-- Skill Card 1: Programming (Span 6) -->
+          <div class="skill-category-card bento-span-6 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-indigo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Programming</h3>
+                <span class="skill-cat-subtitle">Core OOP & Systems Logic</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item highlight-pill">
+                <span class="skill-pill-bullet"></span>
+                <span class="skill-pill-text">Java</span>
+                <span class="skill-pill-tag">NPTEL Certified</span>
+              </div>
+              <div class="skill-pill-item highlight-pill">
+                <span class="skill-pill-bullet"></span>
+                <span class="skill-pill-text">JavaScript</span>
+                <span class="skill-pill-tag">ES6+ Modern</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Web Development (Span 6) -->
+          <div class="skill-category-card bento-span-6 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-cyan">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Web Development</h3>
+                <span class="skill-cat-subtitle">Frontend Architecture & Responsive UIs</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">HTML5</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">CSS3</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">React.js</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Tailwind CSS</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Responsive Web Design</span></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Backend & APIs (Span 4) -->
+          <div class="skill-category-card bento-span-4 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-violet">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Backend & APIs</h3>
+                <span class="skill-cat-subtitle">Data Transmission & Services</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">REST APIs</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">JSON</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">API Integration</span></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Database (Span 4) -->
+          <div class="skill-category-card bento-span-4 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Database</h3>
+                <span class="skill-cat-subtitle">Data Modeling & Storage</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">MySQL</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">MongoDB</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Database Management</span></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Tools (Span 4) -->
+          <div class="skill-category-card bento-span-4 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Tools</h3>
+                <span class="skill-cat-subtitle">Version Control & CMS</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Git</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">GitHub</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">WordPress</span></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: UI/UX (Span 6) -->
+          <div class="skill-category-card bento-span-6 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-pink">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">UI/UX Design</h3>
+                <span class="skill-cat-subtitle">User Empathy & Interactive Systems</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Figma</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Wireframing</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Prototyping</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Information Architecture</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Usability Principles</span></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 7: Other / Professional (Span 6) -->
+          <div class="skill-category-card bento-span-6 reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-teal">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Engineering Mindset & Collaboration</h3>
+                <span class="skill-cat-subtitle">Analytical Rigor & Team Execution</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-group">
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Problem Solving</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Debugging</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Troubleshooting</span></div>
+              <div class="skill-pill-item"><span class="skill-pill-bullet"></span><span class="skill-pill-text">Team Collaboration</span></div>
+            </div>
+          </div>
+
+          <!-- Bento Card 8: Live Availability & Time Banner (Span 12) -->
+          <div class="bento-card bento-col-12 bento-live-card reveal-on-scroll">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+              <div>
+                <div class="live-location-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Krishnagiri, Tamil Nadu-609304, India</span>
+                </div>
+                <div id="liveClock" class="live-time-display">--:--:-- IST</div>
+                <div style="font-size: 0.875rem; color: var(--text-secondary);">
+                  Open for Web Development, UI/UX Design, Data Analysis & Software Engineering Roles
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="#contact" class="btn btn-primary">
+                  <span>Start a Conversation</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <button onclick="copyToClipboard('+918122259846', 'Phone Number')" class="btn btn-secondary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <span>+91 8122259846</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Projects Section (Detailed Cards)
+         ========================================================================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Academic & Real-World Systems</div>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">
+            Engineered software systems addressing real-world institutional logistics and predictive multi-agent intelligence.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Hostel Room Allocation & Student Management System -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-hostelflow.jpg" alt="Hostel Room Allocation & Student Management System" class="project-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="project-quick-preview-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                  Interactive Admin & Student Dashboard
+                </span>
+              </div>
+            </div>
+
+            <div class="project-info-wrap">
+              <div>
+                <div class="project-tags-row">
+                  <span class="project-tag tag-ai">Academic Project</span>
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag tag-design">UI/UX Dashboard</span>
+                </div>
+
+                <h3 class="project-title">Hostel Room Allocation & Student Management System</h3>
+
+                <!-- Exact Project Description -->
+                <p class="project-summary">
+                  Engineered an automated hostel room allocation framework that eliminated redundant manual processes and streamlined the overall workflow. Reduced manual data-entry effort and administrative errors by designing structured input flows and validation-driven interfaces. Designed and wireframed intuitive dashboard modules for administrators and students, improving data discovery and day-to-day management efficiency. The system was built to handle real-time allocation updates while keeping the interface simple for non-technical staff.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li class="project-highlight-item">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span><strong>Workflow Automation:</strong> Eliminated duplicate ledger records and manual allocation bottlenecks with automated assignment rules.</span>
+                  </li>
+                  <li class="project-highlight-item">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span><strong>Validation-Driven UI:</strong> Built structured input forms preventing invalid student bed allocations and conflicting dates.</span>
+                  </li>
+                  <li class="project-highlight-item">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span><strong>Real-Time Updates:</strong> Immediate occupancy updates reflected instantly across warden and student viewports.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-tech-chips">
+                  <span class="tech-chip">Java</span>
+                  <span class="tech-chip">MySQL</span>
+                  <span class="tech-chip">Figma UI/UX</span>
+                  <span class="tech-chip">Workflow Engine</span>
+                </div>
+
+                <button onclick="openCaseStudyModal('hostelflow')" class="btn btn-primary btn-sm">
+                  <span>View Case Study</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Multi-Agent System for Social Media Optimization & Engagement Prediction -->
+          <article class="project-card reversed reveal-on-scroll">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-socialopti.jpg" alt="Multi-Agent System for Social Media Optimization & Engagement Prediction" class="project-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="project-quick-preview-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                  Predictive Engagement Dashboard Preview
+                </span>
+              </div>
+            </div>
+
+            <div class="project-info-wrap">
+              <div>
+                <div class="project-tags-row">
+                  <span class="project-tag tag-ai">Academic Project</span>
+                  <span class="project-tag">Multi-Agent AI</span>
+                  <span class="project-tag">React.js</span>
+                  <span class="project-tag tag-design">Data Analytics</span>
+                </div>
+
+                <h3 class="project-title">Multi-Agent System for Social Media Optimization & Engagement Prediction</h3>
+
+                <!-- Exact Project Description -->
+                <p class="project-summary">
+                  Engineered an intelligent multi-agent framework for social media content optimization and engagement prediction, analyzing captions, visuals, hashtags, and overall content quality. Developed recommendation modules to suggest content improvements, relevant hashtags, and optimal posting times based on predicted engagement. Designed an analytics dashboard to visualize engagement predictions and surface data-driven insights for content planning. The workflow combined design and data analysis to help creators make faster, more informed decisions.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li class="project-highlight-item">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span><strong>Content & Visual Analysis:</strong> Multi-agent pipeline scoring caption readability, image aesthetic appeal, and hashtag potency.</span>
+                  </li>
+                  <li class="project-highlight-item">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span><strong>Intelligent Recommendation Modules:</strong> Generates tailored hashtags and pinpoint optimal posting schedules based on machine learning trends.</span>
+                  </li>
+                  <li class="project-highlight-item">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span><strong>Data-Driven Visual Insights:</strong> Sleek analytics curves translating complex multi-agent inferences into rapid planning decisions.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-tech-chips">
+                  <span class="tech-chip">React.js</span>
+                  <span class="tech-chip">Python AI</span>
+                  <span class="tech-chip">REST APIs</span>
+                  <span class="tech-chip">Data Analytics</span>
+                </div>
+
+                <button onclick="openCaseStudyModal('socialopti')" class="btn btn-primary btn-sm">
+                  <span>View Case Study</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Internship Experience Section
+         ========================================================================== -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Practical Experience</div>
+          <h2 class="section-title">Internship <span class="text-gradient">Experience</span></h2>
+          <p class="section-subtitle">
+            Hands-on WordPress web development, enterprise workflow architecture, and agentic AI platforms.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          
+          <!-- Experience 1: DivineCore Technologies -->
+          <div class="exp-card reveal-on-scroll">
+            <div class="exp-marker">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role-title">WordPress Developer Intern</h3>
+                  <div class="exp-company">
+                    <span>DivineCore Technologies</span>
+                  </div>
+                </div>
+                <span class="exp-badge-duration">3-Month</span>
+              </div>
+
+              <!-- Exact Description -->
+              <p class="exp-description">
+                Created responsive WordPress websites using themes, plugins, and page builders. Designed simple layouts and handled basic hosting and deployment.
+              </p>
+
+              <div class="exp-tags-row">
+                <span class="tech-chip">WordPress</span>
+                <span class="tech-chip">Themes & Plugins</span>
+                <span class="tech-chip">Page Builders</span>
+                <span class="tech-chip">Responsive Web</span>
+                <span class="tech-chip">Hosting & Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: ServiceNow Virtual Internship -->
+          <div class="exp-card reveal-on-scroll">
+            <div class="exp-marker">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role-title">ServiceNow — Virtual Internship</h3>
+                  <div class="exp-company">ServiceNow</div>
+                </div>
+                <span class="exp-badge-duration">2026</span>
+              </div>
+
+              <!-- Exact Description -->
+              <p class="exp-description">
+                Gained exposure to enterprise workflow and platform design principles through guided internship modules.
+              </p>
+
+              <div class="exp-tags-row">
+                <span class="tech-chip">ServiceNow Platform</span>
+                <span class="tech-chip">Enterprise Workflows</span>
+                <span class="tech-chip">Platform Design Principles</span>
+                <span class="tech-chip">ITSM Modules</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3: Salesforce Virtual Internship -->
+          <div class="exp-card reveal-on-scroll">
+            <div class="exp-marker">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role-title">Salesforce — Virtual Internship</h3>
+                  <div class="exp-company">Salesforce · Agentblazer Program</div>
+                </div>
+                <span class="exp-badge-duration">2025</span>
+              </div>
+
+              <!-- Exact Description -->
+              <p class="exp-description">
+                Completed structured modules on Salesforce platform fundamentals and agentic AI concepts under the Agentblazer program.
+              </p>
+
+              <div class="exp-tags-row">
+                <span class="tech-chip">Salesforce Platform</span>
+                <span class="tech-chip">Agentic AI</span>
+                <span class="tech-chip">Agentblazer Program</span>
+                <span class="tech-chip">CRM Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. Certifications Section
+         ========================================================================== -->
+    <section id="certifications" class="certifications-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Verified Credentials</div>
+          <h2 class="section-title">Professional <span class="text-gradient">Certifications</span></h2>
+          <p class="section-subtitle">
+            Accredited recognitions validating programming expertise, IoT systems, agentic platforms, and design craft.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Cert 1: Programming in Java -->
+          <div class="cert-card reveal-on-scroll">
+            <div>
+              <div class="cert-top-row">
+                <span class="cert-badge-issuer">NPTEL</span>
+                <span class="cert-year">2025</span>
+              </div>
+              <h3 class="cert-title">Programming in Java</h3>
+              <p class="cert-issuer-name">National Programme on Technology Enhanced Learning (IIT Kharagpur / Madras)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-status-badge">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Verified Academic Exam</span>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem;">Java · OOP · Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: Internet of Things – IoT -->
+          <div class="cert-card reveal-on-scroll">
+            <div>
+              <div class="cert-top-row">
+                <span class="cert-badge-issuer">NPTEL</span>
+                <span class="cert-year">2026</span>
+              </div>
+              <h3 class="cert-title">Internet of Things – IoT</h3>
+              <p class="cert-issuer-name">NPTEL National Certification Initiative</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-status-badge">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Completed & Verified</span>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem;">Sensors · Protocols · Cloud</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Agentblazer Champion -->
+          <div class="cert-card reveal-on-scroll">
+            <div>
+              <div class="cert-top-row">
+                <span class="cert-badge-issuer" style="color: #00a1e0;">SALESFORCE</span>
+                <span class="cert-year">2025</span>
+              </div>
+              <h3 class="cert-title">Agentblazer Champion</h3>
+              <p class="cert-issuer-name">Salesforce Agentblazer AI Acceleration Program</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-status-badge">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Champion Credential</span>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem;">Agentic AI · CRM Systems</span>
+            </div>
+          </div>
+
+          <!-- Cert 4: Agentblazer Innovator -->
+          <div class="cert-card reveal-on-scroll">
+            <div>
+              <div class="cert-top-row">
+                <span class="cert-badge-issuer" style="color: #00a1e0;">SALESFORCE</span>
+                <span class="cert-year">2026</span>
+              </div>
+              <h3 class="cert-title">Agentblazer Innovator</h3>
+              <p class="cert-issuer-name">Salesforce Advanced Platform & Agentic Solutions</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-status-badge">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Innovator Credential</span>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem;">Autonomous Agents</span>
+            </div>
+          </div>
+
+          <!-- Cert 5: Mastering Figma -->
+          <div class="cert-card reveal-on-scroll">
+            <div>
+              <div class="cert-top-row">
+                <span class="cert-badge-issuer" style="color: #10b981;">GUVI</span>
+                <span class="cert-year">2026</span>
+              </div>
+              <h3 class="cert-title">Mastering Figma</h3>
+              <p class="cert-issuer-name">Guvi Geek Network (IITM Research Park Incubated)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-status-badge">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Verified Design Specialist</span>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem;">Figma · Design Systems · UI</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Contact & Footer Channels
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-title">Let's Connect & <span class="text-gradient">Collaborate</span></h2>
+          <p class="section-subtitle">
+            Whether you have an upcoming web development project, UI/UX design challenge, or full-time opening—reach out anytime.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left Info Card -->
+          <div class="contact-info-card reveal-on-scroll">
+            <div>
+              <h3 class="contact-card-title">Direct Channels</h3>
+              <p class="contact-lead">
+                I'm actively seeking opportunities where I can apply web development, REST API integration, database architecture, and user-centered interface design.
+              </p>
+
+              <div class="contact-channels-list">
+                
+                <!-- Email Item -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-label">
+                    <div class="channel-icon-circle">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div>
+                      <div class="channel-type">Email</div>
+                      <div class="channel-value">umars81222@gmail.com</div>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <button onclick="copyToClipboard('umars81222@gmail.com', 'Email Address')" class="channel-btn" title="Copy to clipboard">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                    <a href="mailto:umars81222@gmail.com" class="channel-btn" title="Send email">
+                      <span>Mail</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Phone Item -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-label">
+                    <div class="channel-icon-circle">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div>
+                      <div class="channel-type">Phone</div>
+                      <div class="channel-value">+91 8122259846</div>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <button onclick="copyToClipboard('+918122259846', 'Phone Number')" class="channel-btn" title="Copy to clipboard">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                    <a href="tel:+918122259846" class="channel-btn" title="Call directly">
+                      <span>Call</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Location Item -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-label">
+                    <div class="channel-icon-circle">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div>
+                      <div class="channel-type">Location</div>
+                      <div class="channel-value">Krishnagiri, Tamil Nadu-609304</div>
+                    </div>
+                  </div>
+                  <span style="font-size: 0.8125rem; color: var(--accent-emerald); font-weight: 600;">Relocation Open</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Social Networks Links -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">Profiles & Resume</span>
+              <div style="display: flex; gap: 0.65rem;">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="LinkedIn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75c.97 0 1.76.78 1.76 1.75s-.79 1.76-1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78Z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="Umar%20faruk%20J_resume.pdf" download="Umar faruk J_resume.pdf" class="btn btn-primary btn-sm" title="Download PDF Resume">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right Form Card -->
+          <div class="contact-form-card reveal-on-scroll">
+            <h3 style="font-size: 1.45rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-primary);">Send a Message</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+              Fill in your details below. Umar will respond directly to your inquiry within 24 hours.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name *</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Email Address *</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject / Purpose</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="e.g. Web Development Project / UI/UX Role">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message *</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Tell me about your project, timeline, tech stack, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                <span>Send Direct Inquiry</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer-wrap">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-info">
+          <div class="footer-brand-name">Umar Faruk J.</div>
+          <p class="footer-brand-desc">
+            Web Developer • UI/UX Designer • WordPress Developer • Data Analyst. Computer Science Engineering student with hands-on experience in web development, frontend technologies, REST API integration, database management, and WordPress development.
+          </p>
+          <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.5rem;">
+            Krishnagiri, Tamil Nadu-609304 | +918122259846 | umars81222@gmail.com
+          </div>
+        </div>
+
+        <ul class="footer-nav-links">
+          <li><a href="#summary" class="footer-nav-link">Summary</a></li>
+          <li><a href="#education" class="footer-nav-link">Education</a></li>
+          <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+          <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+          <li><a href="#experience" class="footer-nav-link">Experience</a></li>
+          <li><a href="#certifications" class="footer-nav-link">Certifications</a></li>
+          <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          <li><a href="Umar%20faruk%20J_resume.pdf" download="Umar faruk J_resume.pdf" class="footer-nav-link" style="color: var(--accent-primary); font-weight: 600;">Download Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          &copy; 2026 Umar Faruk J. Designed with ultra-clean modern tech aesthetics & high-performance engineering.
+        </div>
+        <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Case Study Modal Dialog
+       ========================================================================== -->
+  <div id="caseStudyModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span id="modalCaseBadge" class="section-badge" style="margin-bottom: 0.35rem; font-size: 0.75rem;">Academic Project</span>
+          <h2 id="modalCaseTitle" class="modal-title">Project Deep Dive</h2>
+        </div>
+        <button onclick="closeCaseStudyModal()" class="modal-close-btn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-hero-img-wrap">
+          <img id="modalCaseImage" src="assets/images/project-socialopti.jpg" alt="Case Study Screenshot" class="modal-hero-img">
+        </div>
+
+        <div class="modal-spec-grid">
+          <div class="modal-spec-box">
+            <div class="modal-spec-title">Project Type</div>
+            <div id="modalCaseRole" class="modal-spec-content">Academic Project</div>
+          </div>
+          <div class="modal-spec-box">
+            <div class="modal-spec-title">Engineering Focus</div>
+            <div id="modalCaseTimeline" class="modal-spec-content">Full-Stack & UX Architecture</div>
+          </div>
+          <div class="modal-spec-box">
+            <div class="modal-spec-title">Toolkit / Stack</div>
+            <div id="modalCaseTools" class="modal-spec-content">Java, SQL / React, Python AI</div>
+          </div>
+        </div>
+
+        <div class="modal-case-section">
+          <h3 class="modal-case-h3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Project Overview & Description
+          </h3>
+          <p id="modalCaseOverview" class="modal-case-p"></p>
+        </div>
+
+        <div class="modal-case-section">
+          <h3 class="modal-case-h3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            Problem & Architectural Objective
+          </h3>
+          <p id="modalCaseProblem" class="modal-case-p"></p>
+        </div>
+
+        <div class="modal-case-section">
+          <h3 class="modal-case-h3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            Engineering & Usability Solution
+          </h3>
+          <p id="modalCaseSolution" class="modal-case-p"></p>
+        </div>
+
+        <div class="modal-case-section">
+          <h3 class="modal-case-h3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Key Functional Features & Deliverables
+          </h3>
+          <ul id="modalCaseHighlights" class="project-highlights-list"></ul>
+        </div>
+
+        <div class="modal-case-section" style="padding: 1.5rem; background: var(--bg-tertiary); border-radius: var(--radius-lg); border: 1px solid var(--border-accent);">
+          <div style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 0.35rem;">Measurable Impact & Validation</div>
+          <p id="modalCaseImpact" style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin: 0;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Interactive Professional Resume Modal Dialog
+       ========================================================================== -->
+  <div id="resumeModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog resume-modal-dialog">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <h2 class="modal-title">Professional Resume</h2>
+          <span class="status-pill" style="font-size: 0.75rem;">Verified</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <!-- Direct download from modal -->
+          <a href="Umar%20faruk%20J_resume.pdf" download="Umar faruk J_resume.pdf" class="btn btn-primary btn-sm" title="Download Umar Faruk J. Resume PDF">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download PDF</span>
+          </a>
+          <button onclick="printResume()" class="btn btn-secondary btn-sm" title="Print Resume">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print</span>
+          </button>
+          <button onclick="closeResumeModal()" class="modal-close-btn" aria-label="Close resume modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-paper">
+          
+          <!-- Resume Header Block -->
+          <div class="resume-header-block">
+            <h1 class="resume-name">UMAR FARUK J</h1>
+            <div class="resume-headline">WEB DEVELOPER • UI/UX DESIGNER • WORDPRESS DEVELOPER • DATA ANALYST</div>
+            <div class="resume-contact-inline">
+              <span>📍 Krishnagiri, Tamil Nadu-609304</span>
+              <span>📞 +918122259846</span>
+              <span>📧 umars81222@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="resume-sec-title">PROFESSIONAL SUMMARY</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; text-align: justify;">
+              Computer Science Engineering student with hands-on experience in web development, frontend technologies, REST API integration, database management, and WordPress development. Familiar with Java, JavaScript, HTML, CSS, React.js, SQL, Git/GitHub, and responsive web design. Experienced in developing academic and real-world web projects with a focus on problem-solving, debugging, usability, and maintainable solutions.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="resume-sec-title">EDUCATION</div>
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">B.E. Computer Science and Engineering — Mahendra Engineering College</span>
+                <span class="resume-entry-date" style="font-weight: 700; color: var(--accent-primary);">CGPA: 8.02 (2023 – 2027)</span>
+              </div>
+            </div>
+            <div class="resume-entry" style="margin-top: 0.35rem;">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">Higher Secondary Education — Govt. Boys HSS, Uthangarai</span>
+                <span class="resume-entry-date" style="font-weight: 700; color: var(--accent-cyan);">Score: 69% (2021 – 2023)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Skills -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="resume-sec-title">CORE SKILLS</div>
+            <div style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.875rem;">
+              <div><strong style="color: var(--text-primary);">Programming:</strong> <span style="color: var(--text-secondary);">Java, JavaScript</span></div>
+              <div><strong style="color: var(--text-primary);">Web Development:</strong> <span style="color: var(--text-secondary);">HTML5, CSS3, React.js, Tailwind CSS, Responsive Web Design</span></div>
+              <div><strong style="color: var(--text-primary);">Backend & APIs:</strong> <span style="color: var(--text-secondary);">REST APIs, JSON, API Integration</span></div>
+              <div><strong style="color: var(--text-primary);">Database:</strong> <span style="color: var(--text-secondary);">MySQL, MongoDB, Database Management</span></div>
+              <div><strong style="color: var(--text-primary);">Tools:</strong> <span style="color: var(--text-secondary);">Git, GitHub, WordPress</span></div>
+              <div><strong style="color: var(--text-primary);">UI/UX:</strong> <span style="color: var(--text-secondary);">Figma, Wireframing, Prototyping, Information Architecture, Usability Principles</span></div>
+              <div><strong style="color: var(--text-primary);">Other:</strong> <span style="color: var(--text-secondary);">Problem Solving, Debugging, Troubleshooting, Team Collaboration</span></div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="resume-sec-title">PROJECTS</div>
+            
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">Hostel Room Allocation & Student Management System</span>
+                <span class="resume-entry-date">Academic Project</span>
+              </div>
+              <p class="resume-entry-desc">
+                Engineered an automated hostel room allocation framework that eliminated redundant manual processes and streamlined the overall workflow. Reduced manual data-entry effort and administrative errors by designing structured input flows and validation-driven interfaces. Designed and wireframed intuitive dashboard modules for administrators and students, improving data discovery and day-to-day management efficiency. The system was built to handle real-time allocation updates while keeping the interface simple for non-technical staff.
+              </p>
+            </div>
+
+            <div class="resume-entry" style="margin-top: 0.85rem;">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">Multi-Agent System for Social Media Optimization & Engagement Prediction</span>
+                <span class="resume-entry-date">Academic Project</span>
+              </div>
+              <p class="resume-entry-desc">
+                Engineered an intelligent multi-agent framework for social media content optimization and engagement prediction, analyzing captions, visuals, hashtags, and overall content quality. Developed recommendation modules to suggest content improvements, relevant hashtags, and optimal posting times based on predicted engagement. Designed an analytics dashboard to visualize engagement predictions and surface data-driven insights for content planning. The workflow combined design and data analysis to help creators make faster, more informed decisions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Internship Experience -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="resume-sec-title">INTERNSHIP EXPERIENCE</div>
+            
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">DivineCore Technologies — WordPress Developer Intern</span>
+                <span class="resume-entry-date">3-Month</span>
+              </div>
+              <p class="resume-entry-desc">
+                Created responsive WordPress websites using themes, plugins, and page builders. Designed simple layouts and handled basic hosting and deployment.
+              </p>
+            </div>
+
+            <div class="resume-entry" style="margin-top: 0.65rem;">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">ServiceNow — Virtual Internship</span>
+                <span class="resume-entry-date">2026</span>
+              </div>
+              <p class="resume-entry-desc">
+                Gained exposure to enterprise workflow and platform design principles through guided internship modules.
+              </p>
+            </div>
+
+            <div class="resume-entry" style="margin-top: 0.65rem;">
+              <div class="resume-entry-top">
+                <span class="resume-entry-title">Salesforce — Virtual Internship</span>
+                <span class="resume-entry-date">2025</span>
+              </div>
+              <p class="resume-entry-desc">
+                Completed structured modules on Salesforce platform fundamentals and agentic AI concepts under the Agentblazer program.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div>
+            <div class="resume-sec-title">CERTIFICATIONS</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.875rem; color: var(--text-secondary);">
+              <li>▹ <strong>NPTEL:</strong> Programming in Java (2025), Internet of Things – IoT (2026)</li>
+              <li>▹ <strong>SALESFORCE:</strong> Agentblazer Champion (2025), Agentblazer Innovator (2026)</li>
+              <li>▹ <strong>GUVI:</strong> Mastering Figma</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
